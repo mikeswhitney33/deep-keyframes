@@ -46,12 +46,19 @@ This will go through the checkpoints directory and select the set of weights tha
 I trained with two frames as the input to the network with a single frame as the output that is compared to an actual frame from the movie using a mean squared error.  Here is an example of the data I used:
 
 Input Frame 1:
+
 ![Input Frame 1](samples/000000a.png)
+
 Input Frame 2:
+
 ![Input Frame 2](samples/000000b.png)
+
 Ground Truth Frame:
+
 ![Output Frame](samples/000000y.png)
+
 The network's actual output:
+
 ![Output](samples/000000-out.png)
 
 The results are far from desirable but there are some things of note.  The static backgrounds get carried through the network and are pretty well---albeit pretty blurry---recreated on the other side.
